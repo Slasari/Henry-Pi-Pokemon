@@ -100,7 +100,7 @@ export default function PokemonCreate() {
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(postPokemon(input));
-    alert("Tu pokemon fue creado correctamente!");
+    alert("Your pokemon was successfully created!");
     setInput({
       id: "",
       name: "",
