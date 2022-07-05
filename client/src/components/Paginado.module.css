@@ -1,0 +1,20 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  grid-gap: 10px;
+  gap: 10px;
+  padding-right: 38px;
+  color: aliceblue;
+  border-radius: 6em 6em 6em 6em;
+}
+
+.meme1 {
+  width: 30%;
+  justify-content: space-evenly;
+  background-color: rgb(62, 60, 60);
+  display: flex;
+  cursor: pointer;
+}

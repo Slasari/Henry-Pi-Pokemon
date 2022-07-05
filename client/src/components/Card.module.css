@@ -1,0 +1,129 @@
+.back1 {
+  background-image: linear-gradient(to right top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #000000, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000, #ff0000);
+  width: 100%;
+}
+
+.text1 {
+  text-transform: capitalize;
+  position: relative;
+  ;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  left: 160px;
+}
+
+.card {
+  width: 200px;
+  height: 300px;
+  transition: all .3s;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  padding: 10px;
+  border-radius: .5rem 2rem;
+  box-shadow: 0px 15px 20px -5px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.img {
+  transition: all .3s;
+  background-color: #212121;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.imgpokemon {
+  transition: all 0.5s ease-in-out;
+  z-index: 2;
+}
+
+.imgpokemon:hover {
+  position: relative;
+  z-index: -1;
+  opacity: 0;
+
+}
+
+.img_container {
+  display: grid;
+  border-radius: .5rem 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.description {
+  text-align: start;
+  padding: .5rem 1em;
+  width: 80%;
+  transition: all 0.5s ease;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  backdrop-filter: blur(.1rem);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 0rem 0rem .5rem 2rem;
+}
+
+.description2 {
+  text-align: start;
+  padding: .5rem 1em;
+  width: 80%;
+  transition: all 0.5s ease;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  backdrop-filter: blur(.1rem);
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: .5rem 2rem 0rem 0rem;
+}
+
+.description:hover {
+  transform: perspective(100px) translateX(7px) rotateX(3deg) rotateY(3deg) scale(1);
+  box-shadow: none;
+
+}
+
+.description2:hover {
+  transform: perspective(100px) translateX(7px) rotateX(3deg) rotateY(3deg) scale(1);
+  box-shadow: none;
+}
+
+
+.title {
+  color: aliceblue;
+  transition: all 0.5s ease-in-out;
+  text-transform: capitalize;
+}
+
+.title:hover {
+  transform: scale(1.1);
+}
+
+.img_div {
+  background-color: 'red';
+  width: max-content;
+  position: relative;
+  height: max-content;
+}
+
+.img_shiny {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.img_shiny:hover {
+  z-index: 5;
+}
