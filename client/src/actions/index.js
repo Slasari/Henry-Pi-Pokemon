@@ -2,7 +2,7 @@ import axios from "axios";
 
 export function getPokemons() {
   return async function (dispatch) {
-    let json = await axios.get("http://localhost:3001/pokemons", {});
+    let json = await axios.get("https://henry-pi-pokemon-api.vercel.app/pokemons", {});
     return dispatch({
       type: "GET_POKEMONS",
       payload: json.data,
@@ -12,7 +12,7 @@ export function getPokemons() {
 
 export function DeletePokemon(id) {
   return async function(dispatch) {
-    let deleted = await axios.delete("http://localhost:3001/pokemons/" + id)
+    let deleted = await axios.delete("https://henry-pi-pokemon-api.vercel.app/pokemons/" + id)
   }
 }
 
@@ -25,7 +25,7 @@ export function getAllPokemons() {
 }
 export function getTypes() {
   return async function (dispatch) {
-    let json = await axios.get("http://localhost:3001/types", {});
+    let json = await axios.get("https://henry-pi-pokemon-api.vercel.app/types", {});
     return dispatch({
       type: "GET_TYPES",
       payload: json.data,
@@ -36,7 +36,7 @@ export function getTypes() {
 export function postPokemon(payload) {
   return async function (dispatch) {
     const response = await axios.post(
-      "http://localhost:3001/pokemons",
+      "https://henry-pi-pokemon-api.vercel.app/pokemons",
       payload
     );
     return response;
@@ -46,7 +46,7 @@ export function postPokemon(payload) {
 export function getNamePokemons(name) {
   return async function (dispatch) {
     try {
-      let json = await axios.get("http://localhost:3001/pokemons?name=" + name);
+      let json = await axios.get("https://henry-pi-pokemon-api.vercel.app/pokemons?name=" + name);
       return dispatch({
         type: "GET_NAME_POKEMONS",
         payload: json.data,
@@ -91,7 +91,7 @@ export function orderByAttack(payload) {
 export function getDetail(id) {
   return async function (dispatch) {
     try {
-      let json = await axios.get(`http://localhost:3001/pokemons/${id}`);
+      let json = await axios.get(`https://henry-pi-pokemon-api.vercel.app/pokemons/${id}`);
       return dispatch({
         type: "GET_DETAILS",
         payload: json.data,
