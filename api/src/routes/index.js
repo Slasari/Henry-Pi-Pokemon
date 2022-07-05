@@ -11,9 +11,11 @@ const {
 } = require("./helper");
 const { v4: uuid } = require("uuid");
 const { types } = require("pg");
+const cors = require('cors')
 
 const router = Router();
 
+router.use(cors())
 // Configurar los routers
 // Ejemplo: router.use('/auth', authRouter);
 
