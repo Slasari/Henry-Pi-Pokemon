@@ -23,13 +23,20 @@ router.get("/pokemons", async (req, res) => {
   let name = req.query.name;
   let pokemonsTotal = await getAllPokemons();
   if (name) {
-    const pokemonDbName = await Pokemon.findAll({
+   const pokemonDbName = await Pokemon.findAll({
       where: {
         name: name.toLowerCase(),
       },
+      include: {
+        model: Type,
+        attributes: ["id", "name"],
+        through: {
+          attributes: [],
+        },
+      },
     });
     if (pokemonDbName.length > 0) {
-      res.status(200).send(pokemonDbName);
+      res.status(200).send(pokemonDbName[0]);
     } else {
       try {
         let pokemonName = await axios.get(
