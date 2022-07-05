@@ -269,7 +269,13 @@ export default function PokemonCreate() {
               input.speed.length > 0 &&
               input.height.length > 0 &&
               input.weight.length > 0 &&
-              errors.length < 1 &&
+              !errors.name &&
+              !errors.hp &&
+              !errors.atk &&
+              !errors.def &&
+              !errors.speed &&
+              !errors.height &&
+              !errors.weight &&
               (input.typesName1.length > 0 || input.typesName2.length) > 0 ? (
                 <div className={Style.createBtnDiv1}>
                   <button type="submit" className={Style.createBtn1}>
