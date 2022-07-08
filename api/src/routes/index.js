@@ -150,4 +150,14 @@ router.delete("/pokemons/:id", async (req, res) => {
   res.status(200).send("Done");
 });
 
+router.put("/pokemons/:id", async (req, res) => {
+  const { name, hp, atk, def, speed, weight, height, type1, type2 } = req.body;
+  try{let pokemonFound = await Pokemon.update({ name, hp, atk, def, speed, weight, height, type1, type2 }, {
+    where: { id: req.params.id },
+  });
+  res.status(200).send(pokemonFound)
+} catch{
+  res.status(400).send("Error")
+}});
+
 module.exports = router;
