@@ -15,8 +15,8 @@ export default function SearchBar() {
 
   function handleSubmit(e) {
     e.preventDefault();
-    name === "" ? alert('Write the name of a Pokemon to search for it') :
-    dispatch(getNamePokemons(name));
+    if(name === "" || name[0] === " ") alert('Write the name of a Pokemon to search for it')
+    else dispatch(getNamePokemons(name));
     setName("");
   }
 
