@@ -1,11 +1,12 @@
 ![HenryLogo](https://d31uz8lwfmyn8g.cloudfront.net/Assets/logo-henry-white-lg.png)
 
-# <h1>Proyecto Individual Pokemon</h1>
+# <h1>[Academic] Proyecto Individual SPA Full-Stack</h1>
 
 <img height="150" src="./pokemon.png" />
 
-<p>Es una aplicación de página única, basada en una api de Pokemons con el fin de aplicar los conocimientos aprendidos en el bootcamp de SoyHenry realizando diferentes funcionalidades.
-Desarrollada con tecnologias como React, Redux, Css puro para el FrontEnd, NodeJs, Express, Sequelize para el BackEnd y PostgreSQL para la base de datos.</p>
+<p>Este fue mi primer proyecto de programación y es una single page application sobre Pokemon, Utilicé este proyecto para poner a prueba mis habilidades adquiridas en Henry y cree ésta Enciclopedia Virtual que cuenta con algunas funciones como filtrado y ordenamiento, Búsqueda personalizada, Formulario para poder crear tu propio Pokemon, etc. 
+Las tecnologias que utilicé para llevar a cabo este proyecto fueron: Javascript, React, Redux, Nodejs, Express, Sequelize, PostgresSQL, HTML, CSS, etc.
+</p>
  <a href="https://henry-pi-pokemon-theta.vercel.app/" rel="noopener noreferrer" target="_blank">Sitio Web</a>
  <p>Te invito a visitarla!</p>
 <img src="https://github.com/Slasari/Henry-Pi-Pokemon/blob/master/c66c3d92-e5f7-473d-9d99-d813096665a2.png" alt="background" width="500px" height="250px"/>
