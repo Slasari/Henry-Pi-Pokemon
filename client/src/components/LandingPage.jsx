@@ -1,13 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Style from "./LandingPage.module.css";
+import background from '../assets/background.jpg'
 
 export default function LandingPage() {
   return (
     <div>
       <img
         className={Style.background}
-        src="https://www.clickwallpapers.net/wp-content/uploads/2022/06/clickwallpapers-pokemon-4k-img2-scaled.jpg"
+        src={background}
         alt="Not Found"
       ></img>
       <div className={Style.position}>

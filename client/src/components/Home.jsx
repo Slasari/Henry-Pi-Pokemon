@@ -23,6 +23,7 @@ import Style from "./Home.module.css";
 import Style2 from "./SearchBar.module.css";
 //img
 import AshCrying from "../ashCraying.jpg";
+import loading from '../assets/loading.gif'
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -170,7 +171,7 @@ export default function Home() {
             {allPokemons.length === 0 && !error && (
               <div>
                 <img
-                  src="https://c.tenor.com/vYhrJmhMswcAAAAi/pokemon-snorlax.gif"
+                  src={loading}
                   alt="Not found"
                   className={Style.Snorlax}
                 ></img>
