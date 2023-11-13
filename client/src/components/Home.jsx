@@ -150,7 +150,7 @@ export default function Home() {
             </div>
           </div>
           <div className={Style.home2}>
-            {currentPokemons?.map((e) => {
+            {/* {currentPokemons?.map((e) => {
               return (
                 <div>
                   <div key={e.id}>
@@ -167,9 +167,9 @@ export default function Home() {
                   </div>
                 </div>
               );
-            })}
-            {allPokemons.length === 0 && !error && (
-              <div>
+            })} */}
+            {allPokemons.length > 0 && !error && (
+              <div className={Style.LoadingContainer}>
                 <img
                   src={loading}
                   alt="Not found"
